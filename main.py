@@ -97,7 +97,9 @@ def logout():
     return redirect(url_for("login"))
 
 
-
+@uygulama.route('/')
+def home():
+    return render_template('login.html', warning_2=" ")
 
 
 
