@@ -1,1 +1,1 @@
-web: gunicorn uygulama:uygulama
+web: gunicorn main.py
