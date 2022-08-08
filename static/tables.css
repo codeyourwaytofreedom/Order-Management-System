@@ -1,0 +1,115 @@
+html            {
+                    height:100%;
+                    width:100%;
+
+                }
+
+body            {
+
+                    background-color: 	white;
+                    height:100%;
+                    width:90%;
+                    margin: 0 auto;
+                    margin-top: 1%;
+                    margin-bottom: 1%;
+                    border: 1px solid black;
+                    border-radius:3%;
+
+                }
+
+
+
+.table_row      {
+                    position:relative;
+                    display:block;
+                    /*border: 2px dashed blue;*/
+                    border-radius: 5%;
+                    height:25%;
+                    width:80%;
+                    margin: auto;
+                    padding-left: 5%;
+                    clear: both;
+
+                }
+
+
+
+.table     {
+                     position:relative;
+                    /* border: 1px solid red; */
+                     border-radius: 15%;
+                     width: 20%;
+                     height: 99%;
+                     float: left;
+                     margin-left: 5%;
+                     border-bottom: 1px solid black;
+
+
+
+                }
+
+
+.table:hover   {
+
+                 border-radius: 25%;
+                 box-sizing:border-box;
+                 box-shadow: rgba(0, 90, 90, 0.17) 0px -23px 25px 0px inset,
+                 rgba(255, 0, 0, 0.15) 0px -6px 30px 0px inset,
+                 rgba(255, 0, 0, 0.1) 0px -9px 40px 0px inset,
+                 rgba(255, 0, 0, 0.06) 0px 2px 1px, rgba(255, 255, 0, 0.09) 0px 4px 2px,
+                 rgba(255, 0, 0, 0.09) 0px 8px 4px, rgba(255, 255, 0, 0.09) 0px 16px 8px,
+                 rgba(255, 0, 0, 0.09) 0px 3px 6px;
+                 cursor: pointer;
+
+                 }
+
+
+.table:hover .text-block   {
+
+                                    font-size: 3.2vw;
+                                    font-weight: "bold";
+                                    color: red;
+                                    top: 37%;
+                                    right:27%;
+                            }
+
+
+
+
+.space          {
+                    position: relative;
+                    height: 1%;
+                    margin-top: 0.5%;
+                    margin-bottom: 0.5%;
+                    clear:both;
+                    /*border: 1px solid red;*/
+
+                }
+
+.text-block {
+  position: absolute;
+  top: 55%;
+  right: 35%;
+  color: black;
+  font-size: 2vw;
+  }
+
+
+.logout         {
+                position:relative;
+                float:right;
+                margin-right: 25%;
+                border-bottom: 3px solid black;
+                padding-bottom:1px;"
+                }
+
+.logout:hover         {
+                    position:relative;
+                    float:right;
+                    margin-right: 25%;
+                    border-bottom: 3px solid red;
+                    border-top: 3px solid red;
+                    padding-bottom:1px;
+                    padding-top:1px;
+                    color:red;
+                    }

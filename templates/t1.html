@@ -1,0 +1,151 @@
+{% extends 'layout.html' %}
+
+{% block page_title %}
+    Table One Orders
+{% endblock page_title %}
+
+{% block table_one %}
+
+
+
+
+<div class="space"> </div>
+
+
+<div id="cat_drinks" class="category_holder">
+    <img class="drinks" src="../static/drink.png" alt="Drinks">
+</div>
+<div id="cat_dishes" class="category_holder">
+    <img class="dishes" src="../static/dishes.png" alt="Drinks">
+</div>
+<div id="cat_desserts" class="category_holder">
+            <img class="desserts" src="../static/desserts.png" alt="Drinks">
+
+</div>
+<div id="cat_breakfast" class="category_holder">
+    <img class="breakfast" src="../static/breakfast.png" alt="Drinks">
+</div>
+
+
+
+<div id="order-adds" class="adds">
+
+</div>
+
+<div id="id_products" class="products">
+
+            <div class="product_info">
+                    <p class="product_name">Hot Mocha</p>
+                    <p class="price" style="display:none; float:right">10.50</p>
+                    <button class="add_button"><i class="fa fa-plus"></i></button>
+            </div>
+            <div class="product_info">
+                    <p class="product_name">Ice Mocha</p>
+                    <p class="price" style="display:none;">20.00</p>
+                    <button class="add_button"><i class="fa fa-plus"></i></button>
+            </div>
+            <div class="product_info">
+                    <p class="product_name">Black Tea</p>
+                    <p class="price" style="display:none;">10.00</p>
+                    <button class="add_button"><i class="fa fa-plus"></i></button>
+            </div>
+            <div class="product_info">
+                    <p class="product_name">Cappuccino</p>
+                    <p class="price" style="display:none; float:right">20.00</p>
+                    <button class="add_button"><i class="fa fa-plus"></i></button>
+            </div>
+
+
+            <div class="product_info_dishes">
+                    <p class="product_name">Steak</p>
+                    <p class="price" style="display:none; float:right">100.00</p>
+                    <button class="add_button"><i class="fa fa-plus"></i></button>
+            </div>
+            <div class="product_info_dishes">
+                    <p class="product_name">Margarita</p>
+                    <p class="price" style="display:none;">70.00</p>
+                    <button class="add_button"><i class="fa fa-plus"></i></button>
+            </div>
+            <div class="product_info_dishes">
+                    <p class="product_name">Fish & Chips</p>
+                    <p class="price" style="display:none;">20.00</p>
+                    <button class="add_button"><i class="fa fa-plus"></i></button>
+            </div>
+            <div class="product_info_dishes">
+                    <p class="product_name">Hamburger</p>
+                    <p class="price" style="display:none; float:right">50.00</p>
+                    <button class="add_button"><i class="fa fa-plus"></i></button>
+            </div>
+
+
+            <div class="product_info_desserts">
+                    <p class="product_name">Tiramisu</p>
+                    <p class="price" style="display:none; float:right">60.00</p>
+                    <button class="add_button"><i class="fa fa-plus"></i></button>
+            </div>
+            <div class="product_info_desserts">
+                    <p class="product_name">Cheese Cake</p>
+                    <p class="price" style="display:none;">60.00</p>
+                    <button class="add_button"><i class="fa fa-plus"></i></button>
+            </div>
+            <div class="product_info_desserts">
+                    <p class="product_name">Cherry Dream</p>
+                    <p class="price" style="display:none;">70.00</p>
+                    <button class="add_button"><i class="fa fa-plus"></i></button>
+            </div>
+            <div class="product_info_desserts">
+                    <p class="product_name">Baklava</p>
+                    <p class="price" style="display:none; float:right">50.00</p>
+                    <button class="add_button"><i class="fa fa-plus"></i></button>
+            </div>
+
+
+            <div class="product_info_breakfast">
+                    <p class="product_name">Eggs</p>
+                    <p class="price" style="display:none; float:right">20.00</p>
+                    <button class="add_button"><i class="fa fa-plus"></i></button>
+            </div>
+            <div class="product_info_breakfast">
+                    <p class="product_name">Cheese</p>
+                    <p class="price" style="display:none;">30.00</p>
+                    <button class="add_button"><i class="fa fa-plus"></i></button>
+            </div>
+            <div class="product_info_breakfast">
+                    <p class="product_name">Olives</p>
+                    <p class="price" style="display:none;">20.00</p>
+                    <button class="add_button"><i class="fa fa-plus"></i></button>
+            </div>
+            <div class="product_info_breakfast">
+                    <p class="product_name">Pancakes</p>
+                    <p class="price" style="display:none; float:right">30.00</p>
+                    <button class="add_button"><i class="fa fa-plus"></i></button>
+            </div>
+
+            <div class="background">
+                <h1 class="motto">Order</h1>
+                <h1 class="motto"> Management </h1>
+                <h1 class="motto">System</h1>
+
+            </div>
+
+</div>
+
+
+<div class="bill_container">
+    <h1 class="total_bill"></h1>
+</div>
+
+
+<div class="clear_bill">
+            <button onclick="paid()" class="button_clear_bill">Clear Bill</button>
+</div>
+
+<button class="back"><i class = "fa-arrow-left"></i></button>
+
+<script src="../static/table_one.js">
+
+</script>
+
+
+{% endblock table_one %}
+

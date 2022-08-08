@@ -1,0 +1,77 @@
+{% extends 'layout.html' %}
+
+{% block page_title %}
+    Login Page
+{% endblock page_title %}
+
+{% block login %}
+
+<div class="bckgrnd">
+
+
+
+
+<div class="log-box">
+  <h2>Log In</h2>
+      <div id="warnings">
+
+          <div id="warning_email">
+                <p>Please enter a valid email address!</p>
+            </div>
+
+        <div id="warning_password">
+                 <p>Password must be 6 characters long min! </p>
+                 <p>Password can be 10 characters long max! </p>
+        </div>
+
+        <div id="warning_login">
+                 <p>{{warning_2}}</p>
+        </div>
+
+    </div>
+
+  <form id="the_form" action="/login" method="POST" >
+
+        <div class="user-box-login">
+            <input spellcheck="false" id="email" autocomplete="off" type="text" name="email" required="">
+            <label >Email</label>
+        </div><br>
+
+        <div class="user-box-login">
+            <input id="password" autocomplete="off" type="password" name="psw" required="">
+            <label >Password</label>
+        </div><br>
+
+
+      <a class="log-button-area">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <button id="send_data" type="submit" class="login-button">Log In</button>
+      </a>
+
+
+
+
+  </form>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="static/login.js">
+</script>
+
+
+{% endblock login %}
+

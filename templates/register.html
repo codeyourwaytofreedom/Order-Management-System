@@ -1,0 +1,94 @@
+{% extends 'layout.html' %}
+
+{% block page_title %}
+    Register Page
+{% endblock page_title %}
+
+{% block register %}
+
+<div class="bckgrnd">
+
+
+
+
+<div class="login-box">
+  <h2>Register Your Company</h2>
+    <div id="warnings">
+        <div id="warning_cname">
+                 <p>Company Name can't include numbers and symbols (/.*-)</p>
+                 <p>Company Name must be between 3-20 characters long!</p>
+        </div>
+        <div id="warning_email">
+                 <p>Please enter a valid email address!</p>
+        </div>
+        <div id="warning_password">
+                 <p>Password must be 6 characters long min! </p>
+                 <p>Password can be 10 characters long max! </p>
+        </div>
+        <div id="warning_psw_cnfrm">
+                 <p>Password must be 6 characters long min! </p>
+                 <p>Password can be 10 characters long max! </p>
+        </div>
+        <div id="warning_mismatch">
+                 <p>{{warning_mismatch}}</p>
+        </div>
+        <div id="warning_email_taken">
+
+        </div>
+
+
+
+
+    </div>
+
+  <form id="the_form" action="/register" method="POST">
+        <div class="user-box">
+            <input spellcheck="false" id="cname" autocomplete="off" type="text" name="cname" required="">
+            <label id="lbl_cname">Company Name</label>
+        </div><br>
+        <div class="user-box">
+            <input spellcheck="false" id="email" autocomplete="off" type="text" name="email" required="">
+            <label >Email</label>
+        </div><br>
+        <div class="user-box">
+            <input id="password" autocomplete="off" type="password" name="psw" required="">
+            <label >Password</label>
+        </div><br>
+        <div class="user-box">
+            <input id="confirm" autocomplete="off" type="password" name="psw_cnfrm" required="">
+            <label >Confirm Password</label>
+        </div><br>
+
+
+      <a class="register-button">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <button id="send_data" type="submit" class="signupbtn">Sign Up</button>
+      </a>
+
+
+
+
+  </form>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="static/register.js">
+</script>
+
+
+{% endblock register %}
+

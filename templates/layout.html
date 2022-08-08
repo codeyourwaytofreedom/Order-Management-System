@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='tables.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='table_one.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='test.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='register.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+
+
+    <!-- For icon use -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>
+
+        {% block page_title %}
+        {% endblock page_title %}
+
+
+    </title>
+  </head>
+  <body>
+
+
+
+    {% block tables %}
+    {% endblock tables %}
+
+    {% block table_one %}
+    {% endblock table_one %}
+
+    {% block table_two %}
+    {% endblock table_two %}
+
+    {% block table_three %}
+    {% endblock table_three %}
+
+    {% block register %}
+    {% endblock register %}
+
+    {% block login %}
+    {% endblock login %}
+
+  </body>
+
+  <style>
+  </style>
+</html>
+
+
