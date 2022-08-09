@@ -1,6 +1,27 @@
 
-const table_name = "Table_one_orders"
-const bill_name = "Table_one_bill"
+const canvas_tables = document.querySelector(".canvas_tables");
+const canvas = document.querySelector(".canvas");
+
+const tables = document.querySelectorAll(".table");
+
+for (i=0; i<tables.length; i++)
+{
+    tables[i].addEventListener("click", hide_tables)
+
+}
+
+function hide_tables ()
+			{
+                canvas_tables.remove();
+                canvas.style.display ="Block";
+                console.log(this.id)   //this.id kullanmak için event handler olması gerekiyor.
+
+// Order Functions
+// Order Functions
+// Order Functions
+
+const table_name = this.id
+const bill_name = this.id + "_bill"
 
 // Yeni sipariş divlerinin ekleneceği order  div'ini bul
 const add_to_this_div = document.getElementById("order-adds");
@@ -490,8 +511,4 @@ for ( let i=0; i<buttons.length; i++)
             }
     }
 
-
-
-
-
-
+			}

@@ -30,27 +30,6 @@ def tabs():
         return redirect(url_for("login"))
 
 
-@uygulama.route('/tables/t1')
-def t_one():
-    if "existing_user_by_email" in session:
-        return render_template('t1.html')
-    else:
-        return redirect(url_for("login"))
-
-
-@uygulama.route('/tables/t2')
-def t_two():
-    if "existing_user_by_email" in session:
-        return render_template('t2.html')
-    else:
-        return redirect(url_for("login"))
-
-
-@uygulama.route('/t3')
-def t_three():
-    return render_template('t3.html')
-
-
 @uygulama.route('/register', methods=['POST', 'GET'])
 def register():
     if request.method == "POST":
