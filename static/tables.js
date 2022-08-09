@@ -4,6 +4,16 @@ const canvas = document.querySelector(".canvas");
 
 const tables = document.querySelectorAll(".table");
 
+const button_back = document.querySelector(".back");
+
+button_back.addEventListener("click", back)
+function back()
+                {
+                        canvas.style.display = "None";
+                        canvas_tables.style.display ="Block";
+
+                }
+
 for (i=0; i<tables.length; i++)
 {
     tables[i].addEventListener("click", hide_tables)
@@ -12,7 +22,7 @@ for (i=0; i<tables.length; i++)
 
 function hide_tables ()
 			{
-                canvas_tables.remove();
+                canvas_tables.style.display ="None";
                 canvas.style.display ="Block";
                 console.log(this.id)   //this.id kullanmak için event handler olması gerekiyor.
 

@@ -78,7 +78,10 @@ def logout():
 
 @uygulama.route('/')
 def home():
-    return render_template('login.html', warning_2=" ")
+    if "existing_user_by_email" in session:
+        return redirect(url_for("tabs"))
+    else:
+        return redirect(url_for("login"))
 
 
 
