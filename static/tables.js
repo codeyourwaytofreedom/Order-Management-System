@@ -66,7 +66,7 @@ function starter()
                     let how_many = document.createElement("input");
                     how_many.classList.add("hmany");
                     let val = document.createAttribute("value");
-                    val.value = parseInt(products[a].quantity);
+                    val.value = parseFloat(products[a].quantity);
                     how_many.setAttributeNode(val);
                     new_div_for_order.appendChild(how_many);
 
@@ -300,7 +300,7 @@ for ( let i=0; i<buttons.length; i++)
                     new_div_for_order.appendChild(decrease);
                     decrease.innerHTML = '<i class = "fa fa-minus"></i>';
 
-                    start = start + parseInt(all_prices[i].textContent)
+                    start = start + parseFloat(all_prices[i].textContent)
                     bill.textContent = "Total: " + start + "₺";
                     bill_position= bill_position+1;
 
