@@ -86,23 +86,5 @@ def home():
 
 
 
-
-@uygulama.route('/test', methods=['POST', 'GET'])
-def test():
-    cname = request.form.get("cname")
-    email = request.form.get("email")
-    psw = request.form.get("psw")
-    psw_cnfrm = request.form.get("psw_cnfrm")
-    if psw == psw_cnfrm:
-        c = Company(name=cname, email=email, password=psw)
-        db.session.add(c)
-        db.session.commit()
-        return redirect(url_for("register"))  # sayfayı redirect edersen form bilgileri reset olur
-
-    else:
-
-        return render_template('register.html')
-
-
 if __name__ == '__main__':
     uygulama.run(debug=True)

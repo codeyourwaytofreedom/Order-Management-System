@@ -3,7 +3,6 @@ const canvas_tables = document.querySelector(".canvas_tables");
 const canvas = document.querySelector(".canvas");
 
 const tables = document.querySelectorAll(".table");
-const button_back = document.querySelector(".back");
 
 let table_name;
 let bill_name;
@@ -261,6 +260,7 @@ function hide_tables()
 
 
 
+
 //for döngüsüyle tüm ürünler için ekleme butonundaki
 //add_to_bill fonsksiyonunu oluşturup eventlistener ekle
 for ( let i=0; i<buttons.length; i++)
@@ -412,12 +412,34 @@ for ( let i=0; i<buttons.length; i++)
 
 
 
-
-
 //Permanent Functions
 //button_back.addEventListener("click", back)
 //function back()
 
+function paid()
+                         {
+            var to_remove = document.querySelectorAll('.div-for-order');
+            if(confirm("Do you really want to clear the bill?"))
+            {
+                for (let i=0; i<to_remove.length; i++)
+                {
+                to_remove[i].remove();
+                }
+
+                localStorage.removeItem(table_name);
+                localStorage.removeItem(bill_name);
+                bill.textContent = " ";
+
+                console.log("divler temizlendi");
+                console.log("Hesap tutarı temizlendi");
+                console.log("localstorage temizlendi");
+
+                products_on_the_bill = [];
+                all_ords = [];
+                start = 0;
+
+            }
+    }
 
 
 //menü ekranındaki kategoriler ve geçişleri.
