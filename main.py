@@ -84,7 +84,9 @@ def home():
         return redirect(url_for("login"))
 
 
-
+@uygulama.route('/test')
+def test():
+    return render_template("test.html")
 
 if __name__ == '__main__':
     uygulama.run(debug=True)

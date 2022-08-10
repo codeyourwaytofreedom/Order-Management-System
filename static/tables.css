@@ -1,11 +1,9 @@
 html            {
                     height:100%;
                     width:100%;
-
                 }
 
 body            {
-
                     background-color: 	white;
                     height:100%;
                     width:90%;
@@ -14,7 +12,6 @@ body            {
                     margin-bottom: 1%;
                     border: 1px solid black;
                     border-radius:3%;
-
                 }
 
 
@@ -22,35 +19,28 @@ body            {
 .table_row      {
                     position:relative;
                     display:block;
-                    /*border: 2px dashed blue;*/
                     border-radius: 5%;
                     height:25%;
                     width:80%;
                     margin: auto;
                     padding-left: 5%;
                     clear: both;
-
-                }
-
+                  }
 
 
-.table     {
+
+.table         {
                      position:relative;
-                    /* border: 1px solid red; */
                      border-radius: 15%;
                      width: 20%;
                      height: 99%;
                      float: left;
                      margin-left: 5%;
                      border-bottom: 1px solid black;
-
-
-
                 }
 
 
 .table:hover   {
-
                  border-radius: 25%;
                  box-sizing:border-box;
                  box-shadow: rgba(0, 90, 90, 0.17) 0px -23px 25px 0px inset,
@@ -60,12 +50,10 @@ body            {
                  rgba(255, 0, 0, 0.09) 0px 8px 4px, rgba(255, 255, 0, 0.09) 0px 16px 8px,
                  rgba(255, 0, 0, 0.09) 0px 3px 6px;
                  cursor: pointer;
-
                  }
 
 
 .table:hover .text-block   {
-
                                     font-size: 3.2vw;
                                     font-weight: "bold";
                                     color: red;
@@ -82,8 +70,6 @@ body            {
                     margin-top: 0.5%;
                     margin-bottom: 0.5%;
                     clear:both;
-                    /*border: 1px solid red;*/
-
                 }
 
 .text-block {
@@ -103,16 +89,17 @@ body            {
                 padding-bottom:1px;"
                 }
 
+
 .logout:hover         {
-                    position:relative;
-                    float:right;
-                    margin-right: 25%;
-                    border-bottom: 3px solid red;
-                    border-top: 3px solid red;
-                    padding-bottom:1px;
-                    padding-top:1px;
-                    color:red;
-                    }
+                        position:relative;
+                        float:right;
+                        margin-right: 25%;
+                        border-bottom: 3px solid red;
+                        border-top: 3px solid red;
+                        padding-bottom:1px;
+                        padding-top:1px;
+                        color:red;
+                       }
 
 
 
@@ -124,24 +111,24 @@ body            {
                                         /* Order Page Design */
 
 .category_holder {
-                position: relative;
-                width: 15%;
-                height: 22%;
-                border-radius: 5%;
-                margin-left: 1%;
-                float:left;
-                box-sizing:border-box;
-            }
+                    position: relative;
+                    width: 15%;
+                    height: 22%;
+                    border-radius: 5%;
+                    margin-left: 1%;
+                    float:left;
+                    box-sizing:border-box;
+                 }
 
 
 
-.drinks     {
-                position: relative;
-                width: 55%;
-                height: 99%;
-                margin-left: 22%;
-                padding: 0.1%;
-            }
+.drinks         {
+                    position: relative;
+                    width: 55%;
+                    height: 99%;
+                    margin-left: 22%;
+                    padding: 0.1%;
+                }
 
 
 .dishes, .desserts, .breakfast    {
@@ -157,7 +144,6 @@ body            {
                 position: sticky;
                 width: 30%;
                 height: 75%;
-                /*border: 2px solid black;*/
                 border-radius:5%;
                 float:right;
                 margin-right: 2%;
@@ -169,77 +155,72 @@ body            {
 
 
 .bill_container          {
-                    position: relative;
-                    height: 9%;
-                    width: 27%;
-                    float:right;
-                    margin-right: 2%;
-                    margin-top: 0.5%;
-                    border: 2px solid #50394c;
-                    background-color: #ffef96;
-                    clear:right;
+                            position: relative;
+                            height: 9%;
+                            width: 27%;
+                            float:right;
+                            margin-right: 2%;
+                            margin-top: 0.5%;
+                            border: 2px solid #50394c;
+                            background-color: #ffef96;
+                            clear:right;
+                         }
 
-                }
 
-
-.total_bill     {
-                    position:absolute;
-                    /*font-size: 1.5rem;*/
-                    font-size: 2vw;
-                    text-align:center;
-                    margin:0;
-                    padding:0;
-                    top:50%;
-                    left:50%;
-                    font-family: "American Typewriter";
-                    transform: translateX(-50%) translateY(-50%);
-
-                }
+.total_bill         {
+                        position:absolute;
+                        font-size: 2vw;
+                        text-align:center;
+                        margin:0;
+                        padding:0;
+                        top:50%;
+                        left:50%;
+                        font-family: "American Typewriter";
+                        transform: translateX(-50%) translateY(-50%);
+                    }
 
 
 
 .clear_bill          {
-                    position: relative;
-                    height: 5%;
-                    width: 31%;
-                    float:right;
-                    margin-right: 2%;
-                    margin-bottom: 0.5%;
-                    margin-top: 0.5%;
-                    /*border: 2px solid #50394c;*/
-                    font-family: "American Typewriter";
-                    font-size: 1.5rem;
-                    text-align:center;
-                    clear:right;
-
-                }
+                        position: relative;
+                        height: 5%;
+                        width: 31%;
+                        float:right;
+                        margin-right: 2%;
+                        margin-bottom: 0.5%;
+                        margin-top: 0.5%;
+                        /*border: 2px solid #50394c;*/
+                        font-family: "American Typewriter";
+                        font-size: 1.5rem;
+                        text-align:center;
+                        clear:right;
+                    }
 
 
 
 .button_clear_bill        {
-                                 position:relative;
-                                 width:88%;
-                                 height:99.5%;
-                                 float:right;
-                                box-shadow:inset 0px 1px 0px 0px #f5978e;
-                                background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
-	                            background-color:#fe1a00;
-                                border-radius:6px;
-                                border:1px solid #d02718;
-                                display:inline-block;
-                                cursor:pointer;
-                                color:#ffffff;
-                                font-family:"American Typewriter";
-                                font-size: 1.7vw;
-                                font-weight:bold;
-                                text-shadow:0px 1px 0px #810e05;
-
+                             position:relative;
+                             width:88%;
+                             height:99.5%;
+                             float:right;
+                            box-shadow:inset 0px 1px 0px 0px #f5978e;
+                            background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+                            background-color:#fe1a00;
+                            border-radius:6px;
+                            border:1px solid #d02718;
+                            display:inline-block;
+                            cursor:pointer;
+                            color:#ffffff;
+                            font-family:"American Typewriter";
+                            font-size: 1.7vw;
+                            font-weight:bold;
+                            text-shadow:0px 1px 0px #810e05;
                             }
 
 .button_clear_bill:hover        {
                                         background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
 	                                    background-color:#ce0100;
-                            }
+                                }
 
 
 
@@ -251,7 +232,7 @@ body            {
                         height: 98%;
                         float:left;
                         margin: auto;
-                         text-align: center;
+                        text-align: center;
 
                     }
 
@@ -274,7 +255,6 @@ body            {
                         position: relative;
                         width: 65%;
                         height: 61.5%;
-                        /*border: 2px solid black;*/
                         float:left;
                         margin-left: 2%;
                         margin-top: 1%;
@@ -284,10 +264,8 @@ body            {
 
  .product_info, .product_info_dishes, .product_info_desserts, .product_info_breakfast
                 {
-
                     width: 31%;
                     height: 14%;
-                    /*border: 1px solid black;*/
                     background-color: 	#50394c;
                     float:left;
                     margin-top: 1.15%;
@@ -302,64 +280,58 @@ body            {
 
 
 
- .product_name     {
-
-                position:relative;
-                float:left;
-                margin-top: 9%;
-                margin-left: 10%;
-                font-weight: bold;
-                width: 50%;
-                height:50%;
-                color: #ffef96;
-                text-align:center;
-
-            }
+.product_name     {
+                        position:relative;
+                        float:left;
+                        margin-top: 9%;
+                        margin-left: 10%;
+                        font-weight: bold;
+                        width: 50%;
+                        height:50%;
+                        color: #ffef96;
+                        text-align:center;
+                    }
 
 
 .add_button     {
-                position:relative;
-                float:right;
-                margin-top: 7%;
-                margin-bottom: 7%;
-                margin-right:5%;
-                font-weight: bold;
-                width:20%;
-                height: 50%;
-                border-radius: 20%;
-                background-color: #ffef96;
-                font-size: 1.5vw;
-
-            }
+                    position:relative;
+                    float:right;
+                    margin-top: 7%;
+                    margin-bottom: 7%;
+                    margin-right:5%;
+                    font-weight: bold;
+                    width:20%;
+                    height: 50%;
+                    border-radius: 20%;
+                    background-color: #ffef96;
+                    font-size: 1.5vw;
+                }
 
 .div-for-order {
-                float:left;
-                height: 5%;
-                width: 77%;
-                margin-left: 20%;
-                margin-top: 2%;
-                font-size: 1.5vw;
-                font-weight: bold;
-                border: 1px solid black;
-                text-align:left;
-            }
+                    float:left;
+                    height: 5%;
+                    width: 77%;
+                    margin-left: 20%;
+                    margin-top: 2%;
+                    font-size: 1.5vw;
+                    font-weight: bold;
+                    border: 1px solid black;
+                    text-align:left;
+                }
 
 
 .remove_order     {
-                float:right;
-                height: 90%;
-                width: 10%;
-                margin-right:2%;
-                margin-top: 1%;
-                border: 1px solid black;
-                border-radius: 10%;
-                background-color: red;
-                font-weight: bold;
-                font-size: 1.9vw;
-
-
-
-            }
+                        float:right;
+                        height: 90%;
+                        width: 10%;
+                        margin-right:2%;
+                        margin-top: 1%;
+                        border: 1px solid black;
+                        border-radius: 10%;
+                        background-color: red;
+                        font-weight: bold;
+                        font-size: 1.9vw;
+                    }
 
 
 .hmany     {
@@ -369,21 +341,20 @@ body            {
                 font-weight:bold;
                 text-align:center;
                 color: red;
-                 position:relative;
-                 display: inline-block;
-                 font-size: 1.5vw;
-
+                position:relative;
+                display: inline-block;
+                font-size: 1.5vw;
            }
 
 .decreasebtn  {
                 width: 10%;
                 height: 99%;
                 float:right;
-                 position:relative;
-                 display: inline-block;
-                 text-align:center;
-                 font-size: 1.3vw;
-                 padding: 1%;
+                position:relative;
+                display: inline-block;
+                text-align:center;
+                font-size: 1.3vw;
+                padding: 1%;
               }
 
 .decreasebtn:hover{cursor:pointer;}
@@ -394,25 +365,23 @@ body            {
                 width: 10%;
                 height: 99%;
                 float:right;
-                 position:relative;
-                 display: inline-block;
-                 font-size: 1.3vw;
-                 text-align: center;
-                 padding: 1%;
+                position:relative;
+                display: inline-block;
+                font-size: 1.3vw;
+                text-align: center;
+                padding: 1%;
+               }
 
-
-              }
 
 .notebook     {
                 width: 99%;
                 height: 99%;
                 padding: 0.1%;
-            }
+              }
 
 
 .back       {
-
-                    float:left;
-                 position:relative;
-                 margin-left: 4%;
+                float:left;
+                position:relative;
+                margin-left: 4%;
             }

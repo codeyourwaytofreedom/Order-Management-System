@@ -1,0 +1,66 @@
+html            {
+                    height:100%;
+                    width:100%;
+                }
+
+body            {
+                    background-color: 	white;
+                    height:100%;
+                    width:90%;
+                    margin: 0 auto;
+                    margin-bottom: 1%;
+                    border: 1px solid black;
+                    border-radius:3%;
+                    padding: 1%;
+                }
+
+
+.grid_canvas_tables         {
+                                position: relative;
+                                display:grid;
+                                width:100%;
+                                height:100%;
+                                border-radius:3%;
+                                grid-template-columns: 65% 35%;
+                                gap: 2px;
+
+                            }
+
+
+.product_side               {
+                                display:grid;
+                                grid-template-rows: 20% 70% 10%;
+                                border-radius:3%;
+                                gap: 2px;
+
+                            }
+
+.ps_row               {
+                                        display:grid;
+                                        border: 1px solid black;
+                                        grid-template-columns: 25% 25% 25% 25%;
+
+
+                            }
+
+.cat               {
+                                        border: 1px solid green;
+
+
+                            }
+
+
+.order_side               {
+                                display:grid;
+                                border-radius:5%;
+                                grid-template-rows: 75% 15% 10%;
+                                gap:2px;
+
+
+                            }
+
+.o_row               {
+
+                                        border: 1px solid red;
+
+                            }
