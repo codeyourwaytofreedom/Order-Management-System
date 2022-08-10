@@ -1,12 +1,7 @@
 
-const canvas_tables = document.querySelector(".canvas_tables");
-const canvas = document.querySelector(".canvas");
+const table_name = "Table_one_orders"
+const bill_name = "Table_one_bill"
 
-const tables = document.querySelectorAll(".table");
-const button_back = document.querySelector(".back");
-
-let table_name;
-let bill_name;
 // Yeni sipariş divlerinin ekleneceği order  div'ini bul
 const add_to_this_div = document.getElementById("order-adds");
 //Ürün ekleme butonlarını bul
@@ -22,17 +17,9 @@ let all_ords = [];
 let start_two = 0;
 
 
-for (i=0; i<tables.length; i++)
-{ tables[i].addEventListener("click",hide_tables)
-tables[i].addEventListener("click", starter)
-}
-
 function starter()
   /*starter*/  {
 
-                table_name = this.id
-                bill_name = this.id + "_Bill"
-                console.log(table_name,bill_name)
                 var data_base = JSON.parse(localStorage.getItem(table_name));
                 if (!data_base)
                 { localStorage.setItem(table_name, JSON.stringify([])); }
@@ -241,23 +228,8 @@ function starter()
                 {start=JSON.parse(localStorage.getItem(bill_name));}
   /*starter*/  }
 
-function hide_tables()
-			{
-
-                canvas_tables.style.display ="None";
-                canvas.style.display ="block";
-
-            }
-
-
-
-
-
-
-
-
-
-
+//starter ı çalıştırmayı unutma
+starter();
 
 
 
@@ -414,92 +386,48 @@ for ( let i=0; i<buttons.length; i++)
 
 
 
-//Permanent Functions
-//button_back.addEventListener("click", back)
-//function back()
 
 
 
-//menü ekranındaki kategoriler ve geçişleri.
-function clear_all_products()
-{
-    var parent = document.getElementById("id_products");
-    var all = parent.children;
-    for ( let p=0; p<all.length; p++)
-                    {
-                        all[p].style.display = "none";
-                    }
-}
 
-function display_drinks(id)
-{
-    if (id=="cat_drinks")
+
+
+
+
+
+
+
+
+
+
+
+
+    function paid()
     {
-            clear_all_products();
-            var pros = document.querySelectorAll(".product_info");
-            for ( let inf=0; inf<pros.length; inf++)
+            var to_remove = document.querySelectorAll('.div-for-order');
+            var cbx = document.querySelector('.checkbox_clear_bill');
+            if(confirm("Do you really want to clear the bill?"))
             {
-                pros[inf].style.display = "block";
-                pros[inf].style.backgroundColor = "#EF5B0C";
-            }
-    }
-    else if (id=="cat_dishes")
-    {
-            clear_all_products();
-            var pros = document.querySelectorAll(".product_info_dishes");
-            for ( let inf=0; inf<pros.length; inf++)
-            {
-                pros[inf].style.display = "block";
-            }
-    }
+                for (let i=0; i<to_remove.length; i++)
+                {
+                to_remove[i].remove();
+                }
 
-    else if (id=="cat_desserts")
-    {
-            clear_all_products();
-            var pros = document.querySelectorAll(".product_info_desserts");
-            for ( let inf=0; inf<pros.length; inf++)
-            {
-                pros[inf].style.display = "block";
-                pros[inf].style.backgroundColor = "#D61C4E";
+                localStorage.removeItem(table_name);
+                localStorage.removeItem(bill_name);
+                bill.textContent = " ";
+
+                console.log("divler temizlendi");
+                console.log("Hesap tutarı temizlendi");
+                console.log("localstorage temizlendi");
+
+                products_on_the_bill = [];
+                all_ords = [];
+                start = 0;
+
             }
     }
 
-    else if (id=="cat_breakfast")
-    {
-            clear_all_products();
-            var pros = document.querySelectorAll(".product_info_breakfast");
-            for ( let inf=0; inf<pros.length; inf++)
-            {
-                pros[inf].style.display = "block";
-                pros[inf].style.backgroundColor = "#0078AA";
-            }
-    }
-    else
-    {
-            var pros = document.querySelectorAll(".product_info");
-            for ( let inf=0; inf<pros.length; inf++)
-            {
-                pros[inf].style.display = "block";
-                pros[inf].style.backgroundColor = "#EF5B0C";
-            }
-    }
 
-}
 
-function hov_on (hovered)
-{hovered.style.border = "3px dashed green";}
 
-function hov_out (hovered)
-{hovered.style.border = "transparent";}
-
-function clcked (hovered)
-{hovered.style.border = "3px dashed green";}
-
-//Tüm category divleri için bu for döngüsünü uygula ve döngü içerisinde 3 fonksiyonu aktifleştir
-var cats = document.querySelectorAll(".category_holder");
-for ( let i=0; i<cats.length; i++)
-{
-    cats[i].onmouseover = function() {hov_on(cats[i])};
-    cats[i].onmouseout = function() {hov_out(cats[i])};
-    cats[i].onclick = function() {display_drinks(this.id)};
-}
