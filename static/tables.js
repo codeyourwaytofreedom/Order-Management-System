@@ -462,7 +462,6 @@ function display_drinks(id)
             for ( let inf=0; inf<pros.length; inf++)
             {
                 pros[inf].style.display = "block";
-                pros[inf].style.backgroundColor = "#EF5B0C";
             }
     }
     else if (id=="cat_dishes")
@@ -482,7 +481,6 @@ function display_drinks(id)
             for ( let inf=0; inf<pros.length; inf++)
             {
                 pros[inf].style.display = "block";
-                pros[inf].style.backgroundColor = "#D61C4E";
             }
     }
 
@@ -493,7 +491,6 @@ function display_drinks(id)
             for ( let inf=0; inf<pros.length; inf++)
             {
                 pros[inf].style.display = "block";
-                pros[inf].style.backgroundColor = "#0078AA";
             }
     }
     else
@@ -502,7 +499,6 @@ function display_drinks(id)
             for ( let inf=0; inf<pros.length; inf++)
             {
                 pros[inf].style.display = "block";
-                pros[inf].style.backgroundColor = "#EF5B0C";
             }
     }
 
