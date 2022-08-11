@@ -521,7 +521,7 @@ function clcked (hovered)
 var cats = document.querySelectorAll(".category_holder");
 for ( let i=0; i<cats.length; i++)
 {
-    cats[i].onmouseover = function() {hov_on(cats[i])};
-    cats[i].onmouseout = function() {hov_out(cats[i])};
+    //cats[i].onmouseover = function() {hov_on(cats[i])};
+    //cats[i].onmouseout = function() {hov_out(cats[i])};
     cats[i].onclick = function() {display_drinks(this.id)};
 }

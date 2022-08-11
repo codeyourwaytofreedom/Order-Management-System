@@ -3,58 +3,112 @@ html            {
                     width:100%;
                 }
 
+
+*{border-sizing:border-box;}
+
 body            {
                     background-color: 	white;
-                    height:100%;
+                    height:95%;
                     width:90%;
                     margin: 0 auto;
-                    margin-bottom: 1%;
-                    border: 1px solid black;
-                    border-radius:3%;
-                    padding: 1%;
+                    margin-top: 1%;
+                    border: 1px solid #C0C0C0;
+                    border-radius:5%;
+                    padding: 5px;
                 }
 
 
-.grid_canvas_tables         {
-                                position: relative;
+.grid_canvas_table         {
                                 display:grid;
                                 width:100%;
                                 height:100%;
-                                border-radius:3%;
                                 grid-template-columns: 65% 35%;
                                 gap: 2px;
+                                border: 3px solid maroon;
+
 
                             }
 
 
 .product_side               {
                                 display:grid;
-                                grid-template-rows: 20% 70% 10%;
-                                border-radius:3%;
+                                grid-template-rows: 25% 55% 8%;
                                 gap: 2px;
 
+
                             }
 
-.ps_row               {
+.cats_row               {
+                                        display:grid;
+                                        border: 1px solid #B0C4DE;
+                                        grid-template-columns: 20% 26% 26% 26%;
+                                        padding: 0.5%;
+                                        gap:0.6%;
+
+
+
+                            }
+
+
+.products_grid               {
                                         display:grid;
                                         border: 1px solid black;
-                                        grid-template-columns: 25% 25% 25% 25%;
+                                        grid-template-columns: repeat(3, 1fr);
+                                        gap: 5px;
+                                        padding:5px;
+                            }
+
+
+
+.pro_holder                 {
+
+                                        align-items: center;
+                                        border: 1px solid silver;
+                                        border-radius: 5%;
+                                        text-align: left;
+                                        padding-left: 4%;
+                                        font-size: 1.5vw;
+
+                            }
+
+
+
+.back_row                   {
+                                        display:flex;
+                                        border: 1px solid black;
+                                        padding-top: 1%;
+                                        padding-bottom: 1%;
+                                        justify-content: center;
 
 
                             }
 
-.cat               {
-                                        border: 1px solid green;
 
 
-                            }
 
+
+
+.category_holder_grid                        {
+                                                  overflow:hidden;
+                                                  box-sizing:border-box;
+                                                  border: 1px solid #B0C4DE;
+                                                  padding-right: 8%;
+                                            }
+
+.category_holder_grid   > img                     {
+                                                      display:flex;
+                                                      overflow:hidden;
+                                                      width:78%;
+                                                      height:99%;
+
+                                                }
 
 .order_side               {
                                 display:grid;
                                 border-radius:5%;
-                                grid-template-rows: 75% 15% 10%;
+                                grid-template-rows: 70% 10% 8%;
                                 gap:2px;
+                                box-sizing: border-box;
 
 
                             }
@@ -62,5 +116,19 @@ body            {
 .o_row               {
 
                                         border: 1px solid red;
+                                        box-sizing: border-box;
 
                             }
+
+.orders                     {
+                                        border: 1px solid green;
+                                        overflow:scroll;
+
+                            }
+
+.product_name_grid, .price_grid                 {
+
+
+display:inline-block;
+
+                                                }
