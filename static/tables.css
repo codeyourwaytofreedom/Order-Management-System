@@ -1,24 +1,3 @@
-html            {
-                    height:100%;
-                    width:100%;
-                }
-
-body            {
-                    background-color: 	white;
-                    height:100%;
-                    width:90%;
-                    margin: 0 auto;
-                    margin-top: 1%;
-                    margin-bottom: 1%;
-                    border: 1px solid #FF4500;
-                    border-radius:5%;
-
-                }
-
-
-
-
-
 
 .table         {
                      position:relative;
@@ -437,5 +416,70 @@ body            {
                                     right:30%;
 
                                 }
+
+    .category_holder {
+                        width: 25%;
+                        height: 23%;
+                        margin-left: 1%;
+                        float:none;
+                    }
+
+    #cat_dishes {
+                    position:absolute;
+                    top:0;
+                    left:25%;
+
+                }
+    #cat_drinks  {
+                position:absolute;
+                top:0;
+                left:0;
+                }
+
+    #cat_desserts  {
+                position:absolute;
+                top:25%;
+                left:0;
+                }
+    #cat_breakfast  {
+                position:absolute;
+                top:25%;
+                left:25%;
+                }
+
+    .products {
+                width:45%;
+                height:80%;
+                position:absolute;
+                top:0;
+                right:0;
+                border:1px solid black;
+
+    }
+    .adds{
+
+                position:relative;
+                float:left;
+                top:52%;
+                left:0;
+                height:45%;
+                border:1px solid black;
+    }
+    .bill_container{
+                float:none
+                position:relative;
+                top: 85%;
+                right: 0;
+    }
+    .clear_bill{
+                float:none
+    }
+
+    .product_info, .product_info_dishes, .product_info_desserts, .product_info_breakfast
+                { float:none;
+                    width: 100%;
+                    height:7%;
+                }
+
 
 }
