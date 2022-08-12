@@ -329,7 +329,7 @@ for ( let i=0; i<buttons.length; i++)
                                     console.log("Kaldırılan ürün fiyatı:", all_prices[i].textContent);
 
                                     //toplam fiyatı güncelle
-                                    start = start - parseInt(all_prices[i].textContent);
+                                    start = start - parseFloat(all_prices[i].textContent);
                                     bill.textContent = "Total: " + start + "₺";
 
                                     //arrow filter ile ürünün hesaptaki ürünler array inden çıkar
