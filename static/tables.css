@@ -23,7 +23,7 @@ body            {
 .table         {
                      position:relative;
                      border-radius: 15%;
-                     width: 25%;
+                     width: 20%;
                      height: 30%;
                      float: left;
                      margin-left: 5%;
@@ -50,7 +50,7 @@ body            {
                                     font-weight: "bold";
                                     color: white;
                                     top: 30%;
-                                    right:32%;
+                                    right:29%;
                                     border: 1px solid black;
                                     border-radius: 10%;
                                     background-color:black;
@@ -398,7 +398,7 @@ body            {
                     width:90%;
                     height:90%;
                     box-sizing: border-box;
-                    padding-left: 2%;
+                    padding-left: 10%;
                     padding-top: 1.5%;
 
                  }
@@ -413,3 +413,38 @@ body            {
                     padding-top: 1.5%;
 
                  }
+
+@media all and (max-width: 600px){
+
+    .table {width: 30%; width: 40%;}
+
+    .canvas_tables  {
+                    position:relative;
+                    margin-left:2%;
+                    box-sizing: border-box;
+
+                 }
+    body {border: 1px solid black;}
+
+
+    .text-block {
+                      top: 47%;
+                      right: 34%;
+                      color: black;
+                      font-size: 4vw;
+                }
+
+    .table:hover .text-block   {
+                                    font-size: 6vw;
+                                    font-weight: "bold";
+                                    color: white;
+                                    top: 30%;
+                                    right:30%;
+                                    border: 1px solid black;
+                                    border-radius: 10%;
+                                    background-color:black;
+
+
+                                }
+
+}
