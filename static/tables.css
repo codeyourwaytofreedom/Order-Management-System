@@ -419,9 +419,7 @@ body            {
     .table {width: 30%; width: 40%;}
 
     .canvas_tables  {
-                    position:relative;
                     margin-left:2%;
-                    box-sizing: border-box;
 
                  }
     body {border: 1px solid black;}
@@ -430,20 +428,13 @@ body            {
     .text-block {
                       top: 47%;
                       right: 34%;
-                      color: black;
                       font-size: 4vw;
                 }
 
     .table:hover .text-block   {
                                     font-size: 6vw;
-                                    font-weight: "bold";
-                                    color: white;
                                     top: 30%;
                                     right:30%;
-                                    border: 1px solid black;
-                                    border-radius: 10%;
-                                    background-color:black;
-
 
                                 }
 
