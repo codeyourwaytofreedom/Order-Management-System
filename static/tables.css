@@ -1,4 +1,13 @@
-
+body            {
+                    background-color: 	white;
+                    height:95%;
+                    width:90%;
+                    margin: 0 auto;
+                    margin-top: 1%;
+                    border: 1px solid #FF4500;
+                    border-radius:5%;
+                    padding: 5px;
+                }
 .table         {
                      position:relative;
                      border-radius: 15%;
@@ -394,14 +403,13 @@
                  }
 
 @media all and (max-width: 600px){
-
+    body{border:none;}
     .table {width: 30%; width: 40%;}
 
     .canvas_tables  {
                     margin-left:2%;
 
                  }
-    body {border: 1px solid black;}
 
 
     .text-block {
@@ -427,7 +435,7 @@
     #cat_dishes {
                     position:absolute;
                     top:0;
-                    left:25%;
+                    left:26%;
 
                 }
     #cat_drinks  {
@@ -444,7 +452,7 @@
     #cat_breakfast  {
                 position:absolute;
                 top:25%;
-                left:25%;
+                left:26%;
                 }
 
     .products {
@@ -453,33 +461,94 @@
                 position:absolute;
                 top:0;
                 right:0;
-                border:1px solid black;
+                border:1px solid #FF4500;
+                border-radius: 5%;
 
     }
     .adds{
 
-                position:relative;
                 float:left;
                 top:52%;
                 left:0;
                 height:45%;
+                width:50%;
                 border:1px solid black;
     }
-    .bill_container{
-                float:none
-                position:relative;
-                top: 85%;
-                right: 0;
-    }
-    .clear_bill{
-                float:none
-    }
+    .bill_container {
+                position:absolute;
+                top: 82%;
+                width:45%;
+                right:-2%;
+                height:7%;
+                    }
+
+
 
     .product_info, .product_info_dishes, .product_info_desserts, .product_info_breakfast
                 { float:none;
-                    width: 100%;
+                    width: 90%;
                     height:7%;
+                    position:relative;
+                    margin: auto;
+                    margin-top:2%;
+                    margin-bottom:2%;
+                    padding-left: 4%;
+
+
+                }
+    .motto {
+
+                          font-size: 4vw;
+                          margin-top: 7%;
+
+        }
+    .background {
+
+                padding-top: 40%;
+                padding-left: 2%;
+                padding-right: 2%;
+                overflow:auto;
+
+        }
+
+    .clear_bill          {
+                        position: absolute;
+                        right:-3%;
+                        height:7%;
+                        bottom:1.2%;
+
+                    }
+    .back       {
+
+                    height:7%;
+                    width:17%;
+                    float:none;
+                    position:absolute;
+                    bottom:1.6%;
+                    right: 28%;
                 }
 
+    .div-for-order { position:relative;  height: 9%;  font-size: 2vw;   }
+
+
+
+    .product_name     {
+                        position:absolute;
+                        font-size: 2.5vw;
+                        margin:0;
+                        margin-top: 3%;
+                    }
+
+    .add_button     {
+                    position: absolute;
+                    right:7%;
+                    width: 15%;
+                    height: 90%;
+                    margin:0;
+                    margin-top: 1%;
+
+                    }
+
+    .hmany     { font-size: 2vw;}
 
 }
