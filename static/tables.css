@@ -17,13 +17,10 @@ body            {
                      margin-left: 5%;
                      margin-bottom:2%;
                      border: 3px solid #FF4500;
-                     padding:0;
                      background-image: url("../static/table.svg");
                      background-size: 100% 100%;
 
                      }
-
-
 
 .table:hover   {
                  border-radius: 15%;
@@ -43,19 +40,7 @@ body            {
                                     border-radius: 10%;
                                     background-color:black;
 
-
                             }
-
-
-
-
-.space          {
-                    position: relative;
-                    height: 1%;
-                    margin-top: 0.5%;
-                    margin-bottom: 0.5%;
-                    clear:both;
-                }
 
 .text-block {
   position: absolute;
@@ -76,26 +61,14 @@ body            {
 
 
 .logout:hover         {
-                        position:relative;
-                        float:right;
+
                         border-bottom: 3px solid red;
                         border-top: 3px solid red;
-                        padding-bottom:1px;
                         padding-top:1px;
                         color:red;
                        }
 
-
-
-
-
-                                        /* Order Page Design */
-                                        /* Order Page Design */
-                                        /* Order Page Design */
-                                        /* Order Page Design */
-
 .category_holder {
-                    position: relative;
                     width: 15%;
                     height: 22%;
                     border-radius: 20%;
@@ -105,19 +78,16 @@ body            {
                     border: 2px solid #FF4500;
                  }
 
-.category_holder:hover {        border: 3px dashed #008000;   border-radius: 20%;                 }
+.category_holder:hover {        border: 3px dashed #008000;  }
 
 .drinks         {
-                    position: relative;
                     width: 55%;
                     height: 99%;
                     margin-left: 22%;
                     padding: 0.1%;
                 }
 
-
 .dishes, .desserts, .breakfast    {
-                position: relative;
                 width: 99%;
                 height: 99%;
                 padding: 0.1%;
@@ -125,7 +95,6 @@ body            {
 
 
  .adds     {
-                position: -webkit-sticky;
                 position: sticky;
                 width: 30%;
                 height: 75%;
@@ -163,8 +132,6 @@ body            {
                         transform: translateX(-50%) translateY(-50%);
                     }
 
-
-
 .clear_bill          {
                         position: relative;
                         height: 5%;
@@ -178,8 +145,6 @@ body            {
                         text-align:center;
                         clear:right;
                     }
-
-
 
 .button_clear_bill        {
                              position:relative;
@@ -205,12 +170,8 @@ body            {
 	                                    background-color:#FF8C00;
                                 }
 
-
-
-
  .background
                     {
-                        position: absolute;
                         width: 98%;
                         height: 98%;
                         float:left;
@@ -232,62 +193,47 @@ body            {
                         -webkit-text-stroke-color: black;
         }
 
-
  .products
                     {
-                        position: relative;
                         width: 65%;
                         height: 61.5%;
                         float:left;
                         margin-left: 2%;
-                        margin-top: 1%;
+                        margin-top: 2%;
                         overflow: auto;
                     }
-
 
  .product_info, .product_info_dishes, .product_info_desserts, .product_info_breakfast
                 {
                     width: 30%;
                     height: 14%;
                     float:left;
-                    margin-top: 1.15%;
+                    margin-top: 1.30%;
                     margin-left: 0.4%;
                     margin-right: 1.4%;
                     border-radius: 20%;
                     display:none;
                     font-size: 1.1vw;
-                    text-align: justify;
-                    vertical-align: middle;
                     border: 1px solid #FF4500;
                     border-radius: 5%;
                     background-color: white;
                 }
 
-
-
-
 .product_name     {
-                        position:relative;
                         float:left;
                         margin-top: 9%;
                         margin-left: 5%;
                         font-weight: bold;
-                        width: 50%;
-                        height:50%;
                         color: black;
                         text-align:left;
                     }
 
-
 .add_button     {
-                    position:relative;
                     float:right;
                     margin-top: 7%;
                     margin-bottom: 7%;
                     margin-right:5%;
                     font-weight: bold;
-                    width:20%;
-                    height: 50%;
                     border-radius: 20%;
                     background-color: #ffef96;
                     font-size: 1.5vw;
@@ -304,12 +250,7 @@ body            {
                     border-bottom: 2px dashed #FF4500;
                     text-align:left;
                     padding-bottom: 1px;
-                    align-items: center;
-                    vertical-align: middle;
                 }
-
-
-
 
 
 .hmany     {
@@ -319,8 +260,6 @@ body            {
                 font-weight:bold;
                 text-align:center;
                 color: red;
-                position:relative;
-                display: inline-block;
                 font-size: 1.4vw;
                 pointer-events: none;
            }
@@ -329,9 +268,6 @@ body            {
                 width: 10%;
                 height: 99%;
                 float:right;
-                position:relative;
-                display: inline-block;
-                text-align:center;
                 font-size: 1.3vw;
                 padding: 1%;
                 margin-bottom:1px;
@@ -345,43 +281,29 @@ body            {
                 width: 10%;
                 height: 99%;
                 float:right;
-                position:relative;
-                display: inline-block;
                 font-size: 1.3vw;
-                text-align: center;
                 padding: 1%;
                 margin-bottom:1px;
                }
 
-
-.notebook     {
-                width: 99%;
-                height: 99%;
-                padding: 0.1%;
-              }
-
-
 .back       {
                 float:left;
-                position:relative;
                 margin-left: 30%;
                 height:6%;
-                            background:linear-gradient(to bottom, #FF8C00 5%, #FF4500 100%);
-                            background-color: #FF4500;
-                            border-radius:6px;
-                            border:1px solid #d02718;
-                            display:inline-block;
-                            cursor:pointer;
-                            color:#ffffff;
-                            font-family:"American Typewriter";
-                            font-size: 1.7vw;
-                            font-weight:bold;
-                            text-shadow:0px 1px 0px #810e05;
-
+                background:linear-gradient(to bottom, #FF8C00 5%, #FF4500 100%);
+                background-color: #FF4500;
+                border-radius:6px;
+                border:1px solid #d02718;
+                display:inline-block;
+                cursor:pointer;
+                color:#ffffff;
+                font-family:"American Typewriter";
+                font-size: 1.7vw;
+                font-weight:bold;
+                text-shadow:0px 1px 0px #810e05;
             }
 
 .canvas_tables  {
-                    position:relative;
                     margin:auto;
                     width:90%;
                     height:90%;
@@ -392,7 +314,6 @@ body            {
                  }
 
  .canvas  {
-                    position:relative;
                     margin:auto;
                     width:90%;
                     height:90%;
@@ -551,5 +472,4 @@ body            {
                     }
 
     .hmany     { font-size: 2vw;}
-
 }
