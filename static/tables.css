@@ -472,7 +472,7 @@ body            {
                 left:0;
                 height:45%;
                 width:50%;
-                border:1px solid black;
+                border:1px solid #FF4500;
     }
     .bill_container {
                 position:absolute;
@@ -480,9 +480,10 @@ body            {
                 width:45%;
                 right:-2%;
                 height:7%;
+
                     }
 
-
+    .total_bill{font-size: 3vw;}
 
     .product_info, .product_info_dishes, .product_info_desserts, .product_info_breakfast
                 { float:none;
@@ -528,7 +529,7 @@ body            {
                     right: 28%;
                 }
 
-    .div-for-order { position:relative;  height: 9%;  font-size: 2vw;   }
+    .div-for-order { position:relative;  height: 8%;  font-size: 2vw;  }
 
 
 
